@@ -1,7 +1,6 @@
 const express = require('express')
 const cors = require("cors")
 const { getFact, isPrime, isPerfect, digit_sum, properties } = require('./helper')
-const { error } = require('console')
 
 const app = express()
 const PORT = 8080

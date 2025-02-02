@@ -50,16 +50,20 @@ exports.isPerfect = (number) => {
     return sum === number
 }
 
-exports.digit_sum = (number) => {
+
+
+exports.digit_sum = (no) => {
+    const number = Math.abs(no)
     const digits = String(number).split('').map(Number)
     let sum = 0
     for( let i = 0; i< digits.length; i++){
         sum+=digits[i]
     }
-    return sum
+    return (no < 0) ? Number("-"+sum) : sum
 }
 
-exports.properties = (number) =>{
+exports.properties = (no) =>{
+    const number = Math.abs(no)
     let properties = []
     const digits = String(number).split('').map(Number)
     const base = digits.length
@@ -79,3 +83,5 @@ exports.properties = (number) =>{
     }
     return properties
 }
+
+
