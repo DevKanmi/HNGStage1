@@ -54,7 +54,7 @@ npm run start
 <br>
 
 ### API Specificaton
-ENDPOINT: GET https://hngstage0-0qb0.onrender.com/profile
+ENDPOINT: GET https://hngstage1-m1hg.onrender.com/api/classify-number?number=371
 
 #### Response format
  ```bash
@@ -72,7 +72,7 @@ ENDPOINT: GET https://hngstage0-0qb0.onrender.com/profile
  ```
 
  ### Depoloyment
- Deployed publicly at: https://hngstage0-0qb0.onrender.com/
+ Deployed publicly at: https://hngstage1-m1hg.onrender.com
 
 ### Additional Resources
 Hiring a Node.js Developer? check out:

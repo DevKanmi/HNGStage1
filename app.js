@@ -8,6 +8,10 @@ const PORT = 8080
 app.use(express.json())
 app.use(cors())
 
+app.get("/", (req, res) =>{
+    res.status(200).json("Welcome to my HNG Stage 1 Task")
+})
+
 app.get("/api/classify-number/", async(req, res) =>{
     try{
     const no = req.query.number
@@ -22,7 +26,7 @@ app.get("/api/classify-number/", async(req, res) =>{
 
     if(isNaN(number)){
         return res.status(400).json({
-            number: "alphabet",
+            number: no,
             error: true
     })
 }
