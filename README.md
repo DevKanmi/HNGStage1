@@ -2,10 +2,12 @@
 
 ### Description
 
-This Project is a Simple public API that returns basic information in JSON format:
-- Registered email
-- Current Date and time in ISO 8601 format(UTC)
-- The Github URL of the Project's codebase
+Task Description
+Create an API that takes a number and returns interesting mathematical properties about it, along with a fun fact.
+
+Resources
+- Fun fact API: http://numbersapi.com/#42
+- https://en.wikipedia.org/wiki/Parity_(mathematics)
 
 ### Prerequisites
 
