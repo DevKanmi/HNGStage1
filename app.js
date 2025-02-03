@@ -28,15 +28,15 @@ app.get("/api/classify-number/", async (req, res) => {
         message: "missing number",
       });
     }
-    const number = Number(no);
 
-    if (isNaN(number)) {
+    if (!/^-?\d+$/.test(no)) {
       return res.status(400).json({
         number: no,
         error: true,
       });
     }
 
+    const number = Number(no);
     return res.status(200).json({
       number: number,
       is_prime: isPrime(number),
